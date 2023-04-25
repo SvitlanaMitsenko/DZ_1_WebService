@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<g:gemFund xmlns:g="http://gem.store"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://order.shop gem.xsd ">
+
+
+        <g:gem g:id="1">
+            <g:name g:preciousness="precious">diamond</g:name>
+            <g:origin g:dateMining = "2022-10-10">South Africa</g:origin>
+            <g:weight>0.82</g:weight>
+            <g:visualParams>
+                <g:colour>red</g:colour>
+                <g:cuttingMethod g:facetsCount = "57" >heart</g:cuttingMethod>
+                <g:transparency>transparent</g:transparency>
+            </g:visualParams>
+        </g:gem>
+        <g:gem g:id="2">
+            <g:name g:preciousness="precious">diamond</g:name>
+            <g:origin g:dateMining = "2021-03-10">Botswana</g:origin>
+            <g:weight>2.5</g:weight>
+            <g:visualParams>
+                <g:colour>blue</g:colour>
+                <g:cuttingMethod g:facetsCount = "65" >princess</g:cuttingMethod>
+                <g:transparency>slightly_turbid</g:transparency>
+            </g:visualParams>
+        </g:gem>
+        <g:gem g:id="3">
+            <g:name g:preciousness="precious">diamond</g:name>
+            <g:origin g:dateMining = "2022-10-14">Angola</g:origin>
+            <g:weight>1.36</g:weight>
+            <g:visualParams>
+                <g:colour>red</g:colour>
+                <g:cuttingMethod g:facetsCount = "55" >pear</g:cuttingMethod>
+                <g:transparency>transparent</g:transparency>
+            </g:visualParams>
+        </g:gem>
+        <g:gem g:id="4">
+            <g:name g:preciousness="semiprecious">amethyst</g:name>
+            <g:origin g:dateMining = "2020-02-1o">Germany</g:origin>
+            <g:weight>4.0</g:weight>
+            <g:visualParams>
+                <g:colour>violet</g:colour>
+                <g:cuttingMethod g:facetsCount = "56" >oval</g:cuttingMethod>
+                <g:transparency>medium_turbid</g:transparency>
+            </g:visualParams>
+        </g:gem>
+        <g:gem g:id="5">
+            <g:name g:preciousness="semiprecious">amethyst</g:name>
+            <g:origin g:dateMining = "2021-08-03">Brazil</g:origin>
+            <g:weight>2.55</g:weight>
+            <g:visualParams>
+                <g:colour>violet</g:colour>
+                <g:cuttingMethod g:facetsCount = "33" >round</g:cuttingMethod>
+                <g:transparency>turbid</g:transparency>
+            </g:visualParams>
+        </g:gem>
+        <g:gem g:id="6">
+            <g:name g:preciousness="semiprecious">topaz</g:name>
+            <g:origin g:dateMining = "2020-10-20">Ukraine</g:origin>
+            <g:weight>1.4</g:weight>
+            <g:visualParams>
+                <g:colour>blue</g:colour>
+                <g:cuttingMethod g:facetsCount = "57" >marquise</g:cuttingMethod>
+                <g:transparency>lightly_turbid</g:transparency>
+            </g:visualParams>
+        </g:gem>
+        <g:gem g:id="7">
+            <g:name g:preciousness="semiprecious">topaz</g:name>
+            <g:origin g:dateMining = "2021-06-06">USA</g:origin>
+            <g:weight>0.95</g:weight>
+            <g:visualParams>
+                <g:colour>pink</g:colour>
+                <g:cuttingMethod g:facetsCount = "17" >round</g:cuttingMethod>
+                <g:transparency>lightly_turbid</g:transparency>
+            </g:visualParams>
+        </g:gem>
+        <g:gem g:id="8">
+            <g:name g:preciousness="semiprecious">agate</g:name>
+            <g:origin g:dateMining = "2023-02-18">Georgia</g:origin>
+            <g:weight>4.71</g:weight>
+            <g:visualParams>
+                <g:colour>grey</g:colour>
+                <g:cuttingMethod g:facetsCount = "57" >heart</g:cuttingMethod>
+                <g:transparency>turbid</g:transparency>
+            </g:visualParams>
+        </g:gem>
+        <g:gem g:id="9">
+            <g:name g:preciousness="precious">emerald</g:name>
+            <g:origin g:dateMining = "2022-09-18">Colombia</g:origin>
+            <g:weight>0.3</g:weight>
+            <g:visualParams>
+                <g:colour>green</g:colour>
+                <g:cuttingMethod g:facetsCount = "31" >trillion</g:cuttingMethod>
+                <g:transparency>transparent</g:transparency>
+            </g:visualParams>
+        </g:gem>
+        <g:gem g:id="10">
+            <g:name g:preciousness="precious">emerald</g:name>
+            <g:origin g:dateMining = "2022-12-12">South Africa</g:origin>
+            <g:weight>0.5</g:weight>
+            <g:visualParams>
+                <g:colour>green</g:colour>
+                <g:cuttingMethod g:facetsCount = "56" >pear</g:cuttingMethod>
+                <g:transparency>transparent</g:transparency>
+            </g:visualParams>
+        </g:gem>
+</g:gemFund>

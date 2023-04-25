@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="qualified"
+           elementFormDefault="qualified"
+           targetNamespace="http://gem.store"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="Gem">
+        <xs:sequence>
+            <xs:element name="name" type="NameType"/>
+            <xs:element name="origin">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="OriginEnum">
+                            <xs:attribute name="dateMining" >
+                                <xs:simpleType>
+                                <xs:restriction base="xs:date">
+                                    <xs:maxInclusive value="2023-04-30"/>
+                                </xs:restriction>
+                                </xs:simpleType>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="weight" type="xs:float"/>
+            <xs:element name="visualParams">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="colour" type="ColourEnum"/>
+                        <xs:element name="transparency" type="TransparencyEnum"/>
+                        <xs:element name="cuttingMethod" type="CuttingMethod"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute type="xs:long" name="id" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="NameType">
+        <xs:simpleContent>
+            <xs:extension base="GemNameEnum">
+                <xs:attribute name="preciousness">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:token">
+                            <xs:enumeration value="precious"/>
+                            <xs:enumeration value="semiprecious"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="OriginEnum">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="South Africa"/>
+            <xs:enumeration value="Botswana"/>
+            <xs:enumeration value="Angola"/>
+            <xs:enumeration value="Germany"/>
+            <xs:enumeration value="Ukraine"/>
+            <xs:enumeration value="USA"/>
+            <xs:enumeration value="Georgia"/>
+            <xs:enumeration value="Colombia"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ColourEnum">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="red"/>
+            <xs:enumeration value="blue"/>
+            <xs:enumeration value="violet"/>
+            <xs:enumeration value="pink"/>
+            <xs:enumeration value="grey"/>
+            <xs:enumeration value="green"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="TransparencyEnum">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="transparent"/>
+            <xs:enumeration value="slightly_turbid"/>
+            <xs:enumeration value="medium_turbid"/>
+            <xs:enumeration value="turbid"/>
+            <xs:enumeration value="lightly_turbid"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="GemNameEnum">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="diamond"/>
+            <xs:enumeration value="emerald"/>
+            <xs:enumeration value="amethyst"/>
+            <xs:enumeration value="agate"/>
+            <xs:enumeration value="topaz"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="GemShapeEnum">
+    <xs:simpleType name="GemShapeEnum">
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="round"/>
+            <xs:enumeration value="oval"/>
+            <xs:enumeration value="pear"/>
+            <xs:enumeration value="marquise"/>
+            <xs:enumeration value="princess"/>
+            <xs:enumeration value="trillion"/>
+            <xs:enumeration value="heart"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="CuttingMethod">
+        <xs:simpleContent>
+            <xs:extension base="GemShapeEnum">
+                <xs:attribute name="facetsCount" type="xs:byte" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:element name="gemFund">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="gem" type="Gem" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
